@@ -1,5 +1,4 @@
-import { Container } from "../../constants/genericStyles";
-import { ButtonGold,Title,Text } from "./styles";
+import { ButtonGold, Title, Text, Container } from "./styles";
 
 export default function Design(): JSX.Element {
 
