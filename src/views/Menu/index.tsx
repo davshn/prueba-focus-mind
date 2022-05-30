@@ -1,15 +1,21 @@
-import { Link } from "react-router-dom";
+import { MenuButton, Container, LinkStyled, Title, Blue, ButtonsContainer, Anchor } from "./styles";
 
-export default function Menu(): JSX.Element{
+export default function Menu(): JSX.Element {
 
     return (
-        <div>
-            <Link to={'form'}>
-                <button>Formulario</button>
-            </Link>
-            <Link to={'design'}>
-                <button>Diseño</button>
-            </Link>
-        </div>
+        <Container>
+            <Title>Prueba tecnica <Blue>Focus Mind</Blue></Title>
+            <Title>Hernan david Figueroa </Title>
+            <ButtonsContainer>
+                <LinkStyled to={'form'}>
+                    <MenuButton>Formulario</MenuButton>
+                </LinkStyled>
+                <LinkStyled to={'design'}>
+                    <MenuButton>Diseño</MenuButton>
+                </LinkStyled>
+                <Anchor href="https://github.com/davshn/prueba-focus-mind">Repositorio</Anchor>
+            </ButtonsContainer>
+
+        </Container>
     )
 }

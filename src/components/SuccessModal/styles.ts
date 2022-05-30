@@ -13,7 +13,7 @@ export const BlackScreen = styled.aside`
     align-items:center;
 `;
 export const ModalCont = styled.div`    
-    background:#F8F5F0;
+    background:#000028;
     width:20rem;
     border-radius: 12px;
     padding:0.5rem;
@@ -36,8 +36,8 @@ export const CloseButton = styled.button`
 `;
 export const Accept = styled.button`    
     border-radius: 25px;
-    background: #dabeb0;
-    color: #3F3524;
+    background: #C38B54;
+    color: #fff;
     border:none;
     box-shadow: 4px 4px 9px -4px #3F3524;
     display:block;
@@ -47,12 +47,12 @@ export const Accept = styled.button`
         cursor: pointer;
         &:hover {
             background:#3F3524;
-            color:#dabeb0;
+            color:#fff;
             transition:0.5s;
         }
      }
 `;
 
 export const Text = styled.span`  
-
+    color:#afb2b7;
 `;
