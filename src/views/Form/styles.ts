@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { bgColor, ErrorColor, InputColor, InputText, ButtonsColor,TextColor } from "../../constants/theme";
 
 export const Container = styled.main`
-    background:#000028;
+    background:${bgColor};;
     padding:10%;
     position:fixed;
     width:100%;
@@ -34,7 +35,7 @@ export const NoReqInput = styled.input`
         width:90%;
         height:1rem;
         border-radius: 25px;
-        background: #15161a;
+        background: ${InputColor};
         border:none;
         color:#afb2b7;
         padding:1rem;
@@ -55,9 +56,9 @@ export const InputComments = styled.textarea`
     width:70%;
     height:7rem;
     border-radius: 25px;
-    background: #15161a;
+    background: ${InputColor};
     border:none;
-    color:#afb2b7;
+    color:${InputText};
     padding:1rem;
     @media (min-width: 992px) {
         grid-column:1/span 2;
@@ -74,16 +75,16 @@ export const CountriesSelect = styled.select`
         width:85%;
         height:3rem;
         border-radius: 25px;
-        background: #15161a;
+        background: ${InputColor};
         border:none;
-        color:#afb2b7;
+        color:${InputText};
         padding:1rem;
     }
 `;
 
 export const TextError = styled.span`
     font-size:1rem;
-    color:red;
+    color:${ErrorColor};
     position:absolute;
     margin-top:1rem;
 `;
@@ -93,9 +94,9 @@ export const InputForm = styled.input`
     width:70%;
     height:2rem;
     border-radius: 25px;
-    background: #15161a;
+    background: ${InputColor};
     border:none;
-    color:#afb2b7;
+    color:${InputText};
     padding:1rem;
 
     @media (min-width: 992px) {
@@ -113,17 +114,17 @@ export const InputButtons = styled.input`
     width:41%;
     height:3rem;
     border-radius: 25px;
-    background: #C38B54;
-    color: #fff;
+    background: ${ButtonsColor};
+    color: ${TextColor};
     border:none;
     box-shadow: 4px 4px 9px -4px #3F3524;
     margin:0.5rem auto;
-    
+
     @media (min-width: 992px) {
         cursor: pointer;
         margin-right:3rem;
         &:hover {
-            background:#3F3524;
+            background:${InputText};
             color:#fff;
             transition:0.5s;
         }

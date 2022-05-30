@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { bgColor, ButtonsColor, InputText } from "../../constants/theme";
 
 export const Container = styled.main`
     height: 100%;
     width: 100%;
     position:fixed;
-    background:#000028;
+    background:${bgColor};
     padding-top:10%;
+
     @media (min-width: 992px) {
     padding-top:2%;
     }
@@ -15,22 +17,32 @@ export const Container = styled.main`
 export const Title = styled.h1`
     font-size:1.5rem;
     text-align:center;
-    color:#afb2b7;
+    color:#fff;
 `;
 
 export const Anchor = styled.a`
-    font-size:1rem;
-    text-decoration:none;
-    border: 1px solid #2A5230;
+    width: 10rem;
+    height: 11rem;
+    border: 1px solid ${ButtonsColor};
+    color: ${InputText};
     border-radius: 12px;
-    padding:5%;
-    display:flex;
+    font-size: 1.5rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    text-decoration:none;
+    display: flex;
+    align-items:center;
     justify-content:center;
-    margin-inline:5rem;
-`;
+    margin: 10%;
 
-export const Blue = styled.span`
-    color:blue;
+    @media (min-width: 992px) {
+        &:hover{
+        transform: scale(1.1);
+        background-color: ${ButtonsColor};
+        color: #fff;
+        }
+     }
+
 `;
 
 export const LinkStyled = styled(Link)`
@@ -44,7 +56,7 @@ export const ButtonsContainer = styled.div`
     display:flex;
     flex-direction:column;
     margin-top:20%;
-    margin-bottom:10%;
+
     @media (min-width: 992px) {  
         margin:0;
         flex-direction:row;
@@ -54,16 +66,18 @@ export const ButtonsContainer = styled.div`
 
 export const MenuButton = styled.button`
     width: 10rem;
-    height: 8rem;
-    border: 1px solid #2A5230;
-    color: #2A5230;
+    height: 11rem;
+    border: 1px solid ${ButtonsColor};
+    color: ${InputText};
     border-radius: 12px;
     font-size: 1.5rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
 
     @media (min-width: 992px) {
         &:hover{
         transform: scale(1.1);
-        background-color: #2A5230;
+        background-color: ${ButtonsColor};
         color: #fff;
         }
      }

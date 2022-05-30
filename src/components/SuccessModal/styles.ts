@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { bgColor,ButtonsColor,TextColor,InputText } from "../../constants/theme";
 
 export const BlackScreen = styled.aside`     
     width:100%;
     height:100%;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(5px) saturate(180%);
     position:fixed;
     display:flex;
@@ -13,40 +14,40 @@ export const BlackScreen = styled.aside`
     align-items:center;
 `;
 export const ModalCont = styled.div`    
-    background:#000028;
+    background:${bgColor};
     width:20rem;
     border-radius: 12px;
     padding:0.5rem;
 `;
 export const CloseButton = styled.button`     
     float: right;
-    background:#423116;
+    background:${ButtonsColor};
     border-radius: 50%;
-    color:#F8F5F0;
+    color:${TextColor};
     border-color:#3F3524 solid;
-    
+
     @media (min-width: 992px) {
         cursor: pointer;
         &:hover {
-            background:#F8F5F0;
-            color:#423116;
+            background:${InputText};
+            color:#fff;
             transition:0.5s;
         }
      }
 `;
+
 export const Accept = styled.button`    
-    border-radius: 25px;
-    background: #C38B54;
-    color: #fff;
+    border-radius: 15px;
+    background: ${ButtonsColor};
+    color: ${TextColor};
     border:none;
-    box-shadow: 4px 4px 9px -4px #3F3524;
     display:block;
     margin:1rem auto;
-    
+
     @media (min-width: 992px) {
         cursor: pointer;
         &:hover {
-            background:#3F3524;
+            background:${InputText};
             color:#fff;
             transition:0.5s;
         }

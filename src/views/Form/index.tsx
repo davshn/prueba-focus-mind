@@ -94,8 +94,8 @@ export default function Form(): JSX.Element {
                         <Text>Otro</Text>
                     </section>
                 </RadioContainer>
-                <CountriesSelect name="country" onChange={(e) => hadleInputChange("country", e.target.value)}>
-                    <option value="" disabled selected hidden>Pais</option>
+                <CountriesSelect name="country" defaultValue="Pais" onChange={(e) => hadleInputChange("country", e.target.value)}>
+                    <option value="Pais" disabled hidden>Pais</option>
                     {countries.map((country) => <option key={country} value={country} >{country}</option>)}
                 </CountriesSelect>
                 <section>
