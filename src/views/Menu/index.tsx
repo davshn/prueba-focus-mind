@@ -5,7 +5,7 @@ export default function Menu(): JSX.Element {
     return (
         <Container>
             <Title>Prueba tecnica <Blue>Focus Mind</Blue></Title>
-            <Title>Hernan david Figueroa </Title>
+            <Title>Hernan David Figueroa </Title>
             <ButtonsContainer>
                 <LinkStyled to={'form'}>
                     <MenuButton>Formulario</MenuButton>
@@ -13,9 +13,8 @@ export default function Menu(): JSX.Element {
                 <LinkStyled to={'design'}>
                     <MenuButton>Diseño</MenuButton>
                 </LinkStyled>
-                <Anchor href="https://github.com/davshn/prueba-focus-mind">Repositorio</Anchor>
             </ButtonsContainer>
-
+            <Anchor href="https://github.com/davshn/prueba-focus-mind">Repositorio</Anchor>
         </Container>
     )
 }

@@ -5,15 +5,17 @@ export const Container = styled.main`
     height: 100%;
     width: 100%;
     position:fixed;
-    padding:5%;
+    background:#000028;
+    padding-top:10%;
     @media (min-width: 992px) {
-
+    padding-top:2%;
     }
 `;
 
 export const Title = styled.h1`
     font-size:1.5rem;
     text-align:center;
+    color:#afb2b7;
 `;
 
 export const Anchor = styled.a`
@@ -22,7 +24,9 @@ export const Anchor = styled.a`
     border: 1px solid #2A5230;
     border-radius: 12px;
     padding:5%;
-
+    display:flex;
+    justify-content:center;
+    margin-inline:5rem;
 `;
 
 export const Blue = styled.span`
@@ -41,6 +45,11 @@ export const ButtonsContainer = styled.div`
     flex-direction:column;
     margin-top:20%;
     margin-bottom:10%;
+    @media (min-width: 992px) {  
+        margin:0;
+        flex-direction:row;
+        justify-content:center;
+    }
 `;
 
 export const MenuButton = styled.button`
