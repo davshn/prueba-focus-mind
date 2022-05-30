@@ -3,13 +3,13 @@ import { FormData, Error } from "./types";
 export function validateFirstName(input: string):string | undefined{
     if (!input) return "Nombre requerido";
     if (!(/^[a-z ,.'-]+$/i).test(input)) return "El nombre solo puede contener letras";
-    if (input.length < 2) return "Nombre demasiado corto";
+    if (input.length < 3) return "Nombre demasiado corto";
 }
 
 export function validateLastName(input: string): string | undefined {
-    if (!input) return "Nombre requerido";
-    if (!(/^[a-z ,.'-]+$/i).test(input)) return "El nombre solo puede contener letras";
-    if (input.length < 2) return "Nombre demasiado corto";
+    if (!input) return "Apellido requerido";
+    if (!(/^[a-z ,.'-]+$/i).test(input)) return "El apellido solo puede contener letras";
+    if (input.length < 3) return "Apellido demasiado corto";
 }
 
 export function validateMail(input: string): string | undefined {

@@ -5,6 +5,7 @@ export type FormData = {
     mail: string;
     comments: string;
     date: string;
+    country: string;
     gender: "male" | "female" | "other" | null;
 };
 
